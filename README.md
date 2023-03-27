@@ -21,3 +21,8 @@ API_PASSPHRASE=THE_CONTENT_OF_YOUR_API_PASSPHRASE_HERE
 
 See more about here PRODUCTION and DEMO environments at:
 https://www.okx.com/docs-v5/en/#overview-v5-api-key-creation
+
+
+Pay Attention.
+To do trading, you need to have funds on trading account.
+Add funds and transfer from funding account.
