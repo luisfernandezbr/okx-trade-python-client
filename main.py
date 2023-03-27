@@ -16,12 +16,12 @@ def run(action):
         case "trade_buy":
             okx_client.trade_order_buy(
                 instrument_id="BTC-USDT",
-                amount_string="1.095"
+                amount_string="0.2797"
             )
         case "trade_sell":
             okx_client.trade_order_sell(
                 instrument_id="BTC-USDT",
-                amount_string="0.000001"
+                amount_string="0.00001"
             )
         case _:
             print("Invalid input")
@@ -29,5 +29,5 @@ def run(action):
 
 # run("get_instruments")
 # run("get_balance")
-# run("trade_buy")
-run("trade_sell")
+run("trade_buy")
+# run("trade_sell")
