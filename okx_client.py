@@ -16,12 +16,12 @@ class OkxClient:
         api_key,
         api_secret,
         api_passphrase,
-        is_test_mode=False
+        is_demo_mode=False
     ):
         self.api_key = api_key
         self.api_secret = api_secret
         self.api_passphrase = api_passphrase
-        self.is_test_mode = is_test_mode
+        self.is_demo_mode = is_demo_mode
         self.log_tab = "          "
 
     def get_okx_timestamp(self):
@@ -78,7 +78,7 @@ class OkxClient:
             "OK-ACCESS-PASSPHRASE": self.api_passphrase
         }
 
-        if self.is_test_mode:
+        if self.is_demo_mode:
             headers["x-simulated-trading"] = "1"
 
         return headers
@@ -182,7 +182,7 @@ class OkxClient:
             "sz": amount_string
         }
 
-        if self.is_test_mode:
+        if self.is_demo_mode:
             body["tt"] = "test"
             body["tag"] = "RTOTestOrder"
 
@@ -212,7 +212,7 @@ class OkxClient:
             "sz": amount_string
         }
 
-        if self.is_test_mode:
+        if self.is_demo_mode:
             body["tt"] = "test"
             body["tag"] = "RTOTestOrder"
 

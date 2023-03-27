@@ -19,15 +19,15 @@ class OkxRunner:
             self.API_SECRET = os.getenv("API_SECRET")
             self.API_PASSPHRASE = os.getenv("API_PASSPHRASE")
         else:
-            self.API_KEY = os.getenv("TEST_API_KEY")
-            self.API_SECRET = os.getenv("TEST_API_SECRET")
-            self.API_PASSPHRASE = os.getenv("TEST_API_PASSPHRASE")
+            self.API_KEY = os.getenv("DEMO_API_KEY")
+            self.API_SECRET = os.getenv("DEMO_API_SECRET")
+            self.API_PASSPHRASE = os.getenv("DEMO_API_PASSPHRASE")
 
-        self.is_test_mode = self.ENVIRONMENT != "PRODUCTION"
+        self.is_demo_mode = self.ENVIRONMENT != "PRODUCTION"
 
         self.okx_client = OkxClient(
             self.API_KEY,
             self.API_SECRET,
             self.API_PASSPHRASE,
-            self.is_test_mode
+            self.is_demo_mode
         )
