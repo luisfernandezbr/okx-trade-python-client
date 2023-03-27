@@ -26,3 +26,15 @@ https://www.okx.com/docs-v5/en/#overview-v5-api-key-creation
 Pay Attention.
 To do trading, you need to have funds on trading account.
 Add funds and transfer from funding account.
+
+To run, choose on off the options on main.py file:
+```
+run("get_instruments")
+run("get_balance")
+run("trade_buy")
+run("trade_sell")
+```
+and execute the following command:
+```
+python main.py
+```

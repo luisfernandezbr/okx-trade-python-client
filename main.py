@@ -29,5 +29,5 @@ def run(action):
 
 # run("get_instruments")
 # run("get_balance")
-run("trade_buy")
+# run("trade_buy")
 # run("trade_sell")
